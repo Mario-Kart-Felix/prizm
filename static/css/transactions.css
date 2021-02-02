@@ -1,0 +1,63 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+
+	background-color: #fff;
+	color: #555;
+	font-family: 'Lato', 'Arial', 'sans-serif';
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+
+#head1{
+    background-color:whitesmoke;
+}
+
+
+#logo1{
+    color:black;
+    margin: 30px 30px;
+    text-decoration: underline;
+}
+
+
+#main1{
+    
+    
+    height: 100vh;
+}
+
+
+
+#input1, 
+#input2{
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 2px;
+    
+}
+
+
+
+#footer-logo{
+    font-size: 10px;
+}
+
+
+#ax-welcome{
+    margin-top: 50px;
+}
+
+#ax-info{
+    margin-top: 30px;
+}

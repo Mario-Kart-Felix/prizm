@@ -1,0 +1,67 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+
+	background-color: #fff;
+	color: #555;
+	font-family: 'Lato', 'Arial', 'sans-serif';
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+
+#head1{
+    background-color:whitesmoke;
+}
+
+
+#logo1{
+    color:black;
+    margin: 30px 30px;
+    text-decoration: underline;
+}
+
+
+#main1{
+    background-image: url("/static/images/ab.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 100vh;
+}
+
+#card1{
+    margin-top: 70px;
+}
+
+.s1{
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 2px;
+    
+}
+
+#promo{
+    margin-top: 90px;
+}
+
+.p1{
+
+    color: white;
+    
+
+}
+
+#footer-logo{
+    font-size: 10px;
+}

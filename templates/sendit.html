@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIZM-BANK</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/sendit.css">
+</head>
+
+<body>
+
+
+
+    <div id="head1" class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 id="logo1">PRIZM</h1>
+                <p>The People's Bank</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- main/login -->
+
+
+
+    <div id="main1" class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-sm-12 text-center">
+
+
+                <a type="button" href="/home" class="btn btn-danger">Account Summary</a>
+                <a type="button" href="/transactions" class="btn btn-danger">Transactions history</a>
+                <a type="button" href="/sendit" class="btn btn-danger">transfer/send</a>
+                <a type="button" href="/logout" class="btn btn-danger">Logout</a>
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div id="ax-welcome" class="row">
+            <div class="col-sm-12">
+               {% for message in get_flashed_messages() %}
+                <div class="alert alert-warning">
+                    
+                    {{ message }}
+                </div>
+               {% endfor %}
+            </div>
+        </div>
+
+        <div id="ax-info" class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body text-center">
+                        
+                        <p>Last-updated: {{localtime}}</p>
+                        </br>
+                        <form action="/sendit" method="POST">
+                            <input type="" name="username3" placeholder="Username">
+                        </br>
+                            <input type="" name="account3" placeholder="Account#">
+                         </br>
+                            <input type="" name="amount3" placeholder="$">
+                        </br>
+                            <button type="submit" class="btn btn-danger">Send</button>
+
+                        </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+
+    <div class="container-fluid text-center" style="background-color: whitesmoke;">
+        <div class="row">
+            <div class="col-sm-12">
+                <p id="footer-logo">2021 Awakening Inc®</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
