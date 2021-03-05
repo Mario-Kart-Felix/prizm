@@ -1,0 +1,27 @@
+PyCaret is an open source, low-code machine learning library in Python that allows you to go from preparing your data to deploying your model within seconds in your choice of notebook environment.
+
+https://pycaret.org/
+
+Getting Started with Pycaret For Beginners
+
+Step : 1
+
+Open Anaconda Prompt
+
+Step : 2
+
+Create a conda environment
+
+Image for postImage for post
+Step :3
+
+Image for postImage for post
+Step : 4
+
+Image for postImage for post
+Step : 5
+
+Image for postImage for post
+It was an great experience working with pycaret and its easy to use and saves time .
+
+Thankyou :)
