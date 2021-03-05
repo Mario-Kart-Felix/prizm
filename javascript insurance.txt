@@ -1,0 +1,74 @@
+Making a simple javascript program to classify users under certain insurance brackets depending on their age and marital status. The following program works, however when I test the program I cannot get the program to correctly differentiate between class 3 and class 4 insurance. Im fairly new to javascript so please excuse If I have something silly.
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+       <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title> Insurance Program </title>
+
+<script type = "text/javascript">
+
+function insurance(form)
+{
+
+var fname = form.firstname.value;
+var sname = form.surname.value;
+var age = form.age.value;
+var insurance;
+
+var marital = form.maritalstatus.value;
+
+document.write(marital);
+
+if (marital = 2 && age >= 30)
+{
+insurance = "Grade 1";
+}
+
+else if (marital = 1 && age > 30)
+{
+insurance = "Grade 2";
+}
+
+else if (marital = 2 && age < 30)
+{
+insurance = "Grade 3";
+}
+
+else if (marital = 1 && age < 30)
+{
+insurance = "Grade 4";
+}
+
+document.write("Thank you " + fname + " " + sname + "<br>");
+document.write("You belong to " + insurance + " Insurance");
+
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+<h4> Insurance Program </h4>
+
+<form>
+Enter your first-name : <input type = "text" name="firstname"> 
+Enter your surname : <input type = "text" name="surname"> <br>
+Enter your age: <input type = "text" name="age"> <br>
+Select your current marital status
+<Select id ="maritalstatus" name = "maritalstatus">
+<option value = "1"> Single </option>
+<option value = "2"> Married </option>
+</Select>
+
+
+<input type = "submit" value = "submit" onclick="insurance(this.form)">
+</form>
+
+
+</body>
+</html>
+javascript
